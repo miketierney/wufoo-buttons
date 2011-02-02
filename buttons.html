@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Button Samples</title>
+  <style type="text/css">
+    body { font: normal 0.75em/1.2 "Lucida Grande", Tahoma, Arial, Verdana, sans-serif; }
+
+    /* clearfix */
+    .group:after {
+      content: ".";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden;
+    }
+
+    /* IE 6 */
+    * html .group {
+      height: 1%;
+    }
+
+    /* IE 7 */
+    *:first-child+html .group {
+      min-height: 1px;
+    }
+  </style>
+
+  <link rel="stylesheet" href="buttons.css" type="text/css" />
+</head>
+<body>
+  <div class="buttons group">
+    <button type="submit" class="positive">
+      <img src="images/icons/tick.png" alt=""/>
+      Save
+    </button>
+
+    <a href="#" onclick="return false;">
+      <img src="images/icons/textfield_key.png" alt=""/>
+      Change Password
+    </a>
+
+    <a href="#" class="negative" onclick="return false;">
+      <img src="images/icons/cross.png" alt=""/>
+      Cancel
+    </a>
+  </div>
+
+  <div>
+    <p>All credit goes to the guys over at <a href="http://particletree.com">Particletree/Wufoo</a> &ndash; I&rsquo;m just adapting <a href="http://particletree.com/features/rediscovering-the-button-element/">their code</a> to suit my re-use (this is their sample code, too, aside from some basic styling).</p>
+  </div>
+</body>
+</html>
